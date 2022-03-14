@@ -2,6 +2,9 @@ import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
 import { Movie } from "types/movie";
 
+import "./styles.css";
+
+
 type MovieProps = {
   movie: Movie;
 };
@@ -9,7 +12,7 @@ type MovieProps = {
 function MovieCard({ movie }: MovieProps) {
 
   return (
-    <div>
+    <div className="card-shadown">
       <img
         className="dsmovie-movie-card-image"
         src={movie.image}
